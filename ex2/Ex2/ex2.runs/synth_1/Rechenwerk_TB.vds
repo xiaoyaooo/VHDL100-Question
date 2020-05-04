@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May  4 18:31:25 2020
+# Process ID: 32072
+# Current directory: C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.runs/synth_1
+# Command line: vivado.exe -log Rechenwerk_TB.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Rechenwerk_TB.tcl
+# Log file: C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.runs/synth_1/Rechenwerk_TB.vds
+# Journal file: C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Rechenwerk_TB.tcl -notrace
+Command: synth_design -top Rechenwerk_TB -part xczu9eg-ffvb1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 42952 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 437.207 ; gain = 98.652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Rechenwerk_TB' [C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd:66]
+ERROR: [Synth 8-3302] unable to open file 'program.txt' in 'r' mode [C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd:137]
+ERROR: [Synth 8-285] failed synthesizing module 'Rechenwerk_TB' [C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd:66]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 493.641 ; gain = 155.086
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Mon May  4 18:31:35 2020...

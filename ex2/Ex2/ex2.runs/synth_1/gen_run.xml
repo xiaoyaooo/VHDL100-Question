@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1588609883">
+  <File Type="PA-TCL" Name="Rechenwerk_TB.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Rechenwerk_TB_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Rechenwerk_TB_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Rechenwerk_TB.vds"/>
+  <File Type="RDS-UTIL" Name="Rechenwerk_TB_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Rechenwerk_TB_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Rechenwerk_TB.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Rechenwerk_TB_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Rechenwerk_TB_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Rechenwerk_TB_modelsim.vhd"/>
+        <Attr Name="ImportTime" Val="1588595294"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/components/Arithmetische_Logikeinheit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/components/Arithmetische_Logikeinheit.vhd"/>
+        <Attr Name="ImportTime" Val="1588595294"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/components/Mux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/components/Mux.vhd"/>
+        <Attr Name="ImportTime" Val="1588595294"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/components/Register.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/components/Register.vhd"/>
+        <Attr Name="ImportTime" Val="1588595294"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/components/Rechenwerk.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/components/Rechenwerk.vhd"/>
+        <Attr Name="ImportTime" Val="1588595294"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/Base_Zynq_MPSoC/Base_Zynq_MPSoC.bd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Rechenwerk_TB"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

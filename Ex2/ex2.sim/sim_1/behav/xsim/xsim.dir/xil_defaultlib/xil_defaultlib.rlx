@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd,1588622901,vhdl,,,,rechen_config;rechenwerk_tb,,,,,,,,
+C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Arithmetische_Logikeinheit.vhd,1588595294,vhdl,C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Rechenwerk.vhd,,,alu,,,,,,,,
+C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Mux.vhd,1588595294,vhdl,C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Rechenwerk.vhd,,,mux,,,,,,,,
+C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Rechenwerk.vhd,1588623468,vhdl,C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd,,,data_path_struct;real_rechen_config,,,,,,,,
+C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Register.vhd,1588595294,vhdl,C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Rechenwerk.vhd,,,reg,,,,,,,,

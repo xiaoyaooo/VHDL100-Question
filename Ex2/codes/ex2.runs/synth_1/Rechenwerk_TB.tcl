@@ -17,7 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {HDL 9-1061} -limit 100000
+set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xczu9eg-ffvb1156-2-e
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,7 +31,13 @@ set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:zcu102:part0:3.2 [current_project]
 set_property ip_output_repo c:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd
+read_vhdl -library xil_defaultlib {
+  C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Rechenwerk.vhd
+  C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Arithmetische_Logikeinheit.vhd
+  C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd
+  C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Mux.vhd
+  C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Register.vhd
+}
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be

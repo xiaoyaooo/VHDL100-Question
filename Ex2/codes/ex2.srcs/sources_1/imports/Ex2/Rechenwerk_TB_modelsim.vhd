@@ -67,20 +67,21 @@ ARCHITECTURE behavior OF Rechenwerk_TB IS
 
 -- STUDENT CODE HERE
 signal mux_R2_data_in : std_logic_vector(3 DOWNTO 0);
-signal mux_sel_sig : std_logic;
-signal R2_en : std_logic;
-signal R1_en : std_logic;
-signal instruction_en : std_logic;
+signal mux_sel_sig : std_logic:= '0';
+signal R2_en : std_logic:= '0';
+signal R1_en : std_logic:= '0';
+signal instruction_en : std_logic:= '0';
 signal clk : std_logic := '0';
 signal rst : std_logic := '1';
 signal status_out :  std_logic_vector(2 DOWNTO 0);			-- output Status register
 signal alu_res 		:  std_logic_vector(3 DOWNTO 0);    		-- output ALU 
 signal alu_res_rdy 	:  std_logic;
 signal program_counter : integer;
+
 -- STUDENT CODE until HERE
 signal instruction 	: std_logic_vector(3 DOWNTO 0);  	-- control signals for the ALU
 -- STUDENT CODE HERE
-COMPONENT rechen IS
+COMPONENT data_path_struct IS
     PORT(
 		clk   			: in std_logic;						    	-- clock
 		rst 			: in std_logic;						    	-- Reset, high active
@@ -126,11 +127,7 @@ BEGIN
 		if (rst = '1') then
 			-- STUDENT CODE HERE
             -- reset all signals and variables?
-            mux_R2_data_in <= X"0";
-            mux_sel_sig <= '0';
-            R2_en <= '0';
-            R1_en <= '0';
-            instruction_en <= '0';
+            mux_R2_data_in <= X"0"; 
             program_counter <= 0;
             --instruction <= X"0";
             -- STUDENT CODE until HERE
@@ -148,14 +145,55 @@ BEGIN
 				read(inbuf, value);
 				value_std := to_stdlogicvector(value);
 			end if;
-			
+
 			instruction <= value_std(7 downto 4);
 		
 			-- STUDENT CODE HERE
---TODO:
 -- 1.mux_R2_data_in
             mux_R2_data_in <= value_std(3 downto 0);
-            --depending on instruction
+            if instruction = "1010"  then
+                program_counter <= to_integer(signed(mux_R2_data_in));
+            end if;
+--Achtung!! one signal can only be handled within one process,if handled with two more processes
+--in HW, it will be driven by multi-driver--simulation error!       
+-- 2. mux_sel_sig
+-- 3. R2_en
+-- 4. R1_en
+-- 6. instruction_en
+--hinweise aus PDF:
+--Iterate through the mock-up "instruction memory" in order to test the data path.
+--!!!use for loop to loop all ops inside buffer
+
+--You have to enable the ALU if a computation has to be performed.
+--!!!instrucion_en set to 1 if ops are computations
+
+--Opcode "1000" and "1001" don't require processing by the ALU but storing
+--new data to the registers. Opcode "1010" requires modifying the value of
+--the Testbench's "program counter".
+---!!!seperate r1_en and r2_en
+---!!!add new signal programm counter!pointer to instruction memory?
+
+--Results computed by the ALU need to be stored into register 1.
+--!!!compare or shift op needed to r1_en
+
+--You need to control the multiplexer for storing results from the ALU to
+--register 1 or loading new data to the register.
+--!!!mux=1 load new data to r1
+--!!!mux=0 load results to r1
+
+
+
+
+
+			-- STUDENT CODE until HERE
+		end if;
+   end process main;
+
+-- STUDENT CODE HERE
+--solve the problem with one clock delay of signal with 
+--one concurrent process
+    instruct:PROCESS (clk)
+           begin         --depending on instruction
             case instruction is
                 --add
                 when  "0000" => mux_sel_sig <= '0';
@@ -202,6 +240,7 @@ BEGIN
                                 R2_en <= '0';
                                 R1_en <= '1';
                                 instruction_en <= '0';
+
                 --load r2 new data
                 when  "1001" => mux_sel_sig <= '1';
                                 R2_en <= '1';
@@ -212,47 +251,16 @@ BEGIN
                                 R2_en <= '1';
                                 R1_en <= '1';
                                 instruction_en <= '1';
-                                program_counter <= to_integer(signed(mux_R2_data_in));
+                                --
                                 --should i modify the next instruction?
                                 --instrucion <= 
                  when others => null;
 
           end case;
--- 2. mux_sel_sig
--- 3. R2_en
--- 4. R1_en
--- 6. instruction_en
---hinweise aus PDF:
---Iterate through the mock-up "instruction memory" in order to test the data path.
---!!!use for loop to loop all ops inside buffer
-
---You have to enable the ALU if a computation has to be performed.
---!!!instrucion_en set to 1 if ops are computations
-
---Opcode "1000" and "1001" don't require processing by the ALU but storing
---new data to the registers. Opcode "1010" requires modifying the value of
---the Testbench's "program counter".
----!!!seperate r1_en and r2_en
----!!!add new signal programm counter!pointer to instruction memory?
-
---Results computed by the ALU need to be stored into register 1.
---!!!compare or shift op needed to r1_en
-
---You need to control the multiplexer for storing results from the ALU to
---register 1 or loading new data to the register.
---!!!mux=1 load new data to r1
---!!!mux=0 load results to r1
-
-
-
-
-
-			-- STUDENT CODE until HERE
-		end if;
-   end process main;
-
--- STUDENT CODE HERE
-    data_path_struct:rechen
+   
+    end process instruct;
+    
+    data_path_struct1:data_path_struct
     PORT MAP(
         clk =>	clk	,				    	-- clock
 		rst =>  rst	,				    	-- Reset, high active
@@ -279,7 +287,7 @@ END;
 
  configuration rechen_config of Rechenwerk_TB is
     for behavior
-        for data_path_struct : rechen
+        for data_path_struct1 : data_path_struct
             use entity work.data_path_struct(structural);
         end for;
     end for;

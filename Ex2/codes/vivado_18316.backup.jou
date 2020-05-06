@@ -1,0 +1,255 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May  4 17:35:02 2020
+# Process ID: 18316
+# Current directory: C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent78800 C:\Users\uhtrk\Desktop\vhdl\ex2\pes_dhl_ex2\Ex2\ex2.xpr
+# Log file: C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/vivado.log
+# Journal file: C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.xpr
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/bd/Base_Zynq_MPSoC/Base_Zynq_MPSoC.bd]
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Rechenwerk_TB [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property is_enabled true [get_files  C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/bd/Base_Zynq_MPSoC/Base_Zynq_MPSoC.bd]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/bd/Base_Zynq_MPSoC/Base_Zynq_MPSoC.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/bd/Base_Zynq_MPSoC/Base_Zynq_MPSoC.bd
+file delete -force C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/bd/Base_Zynq_MPSoC
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_project
+create_project project_1 C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/test/project_1 -part xc7vx485tffg1157-1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/Rechenwerk_TB_modelsim.vhd C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/components/Rechenwerk.vhd C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/components/Register.vhd C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/components/Mux.vhd C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/components/Arithmetische_Logikeinheit.vhd}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Rechenwerk_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/test/project_1/project_1.srcs/sim_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/test/project_1/project_1.srcs/sim_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd
+file delete -force C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/test/project_1/project_1.srcs/sim_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/test/project_1/project_1.srcs/sim_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/test/project_1/project_1.srcs/sim_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd
+file delete -force C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/test/project_1/project_1.srcs/sim_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd
+import_files -fileset sim_1 -force -norecurse C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd
+update_compile_order -fileset sim_1
+open_project C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sim_1/imports/Base_Zynq_MPSoC/mpsoc_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sim_1/imports/Base_Zynq_MPSoC/mpsoc_tb.v
+file delete -force C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sim_1/imports/Base_Zynq_MPSoC/mpsoc_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Rechenwerk_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+current_project project_1
+current_project ex2
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_simulation
+source Rechenwerk_TB.tcl
+run all
+relaunch_sim
+run all
+run 10 ns
+run all
+relaunch_sim
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+relaunch_sim
+run 10 ns
+run 100 ns
+run 100 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+relaunch_sim
+run 10 ns
+run 10 ns
+run 10 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+run 10 ns
+run 10 ns
+run 10 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+step
+step
+step
+restart
+run 100 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes {C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Mux.vhd C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Rechenwerk.vhd C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Arithmetische_Logikeinheit.vhd C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Register.vhd}
+update_compile_order -fileset sim_1
+set_property library work [get_files -of_objects [get_filesets sources_1] C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Rechenwerk.vhd]
+relaunch_sim
+restart
+run 100 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+set_property library xil_defaultlib [get_files -of_objects [get_filesets sources_1] C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Rechenwerk.vhd]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source Rechenwerk_TB.tcl
+restart
+run 100 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+set_property source_mgmt_mode DisplayOnly [current_project]
+reorder_files -after C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Rechenwerk.vhd C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Arithmetische_Logikeinheit.vhd
+relaunch_sim
+restart
+run 100 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+relaunch_sim
+restart
+run 100 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+relaunch_sim
+restart
+run 100 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+close_project

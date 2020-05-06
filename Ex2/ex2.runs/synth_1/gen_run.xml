@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1588619056">
   <File Type="PA-TCL" Name="Rechenwerk_TB.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Rechenwerk_TB_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Rechenwerk_TB_reports.tcl"/>
   <File Type="RDS-RDS" Name="Rechenwerk_TB.vds"/>
   <File Type="RDS-UTIL" Name="Rechenwerk_TB_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Rechenwerk_TB_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Rechenwerk_TB.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Rechenwerk_TB_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Rechenwerk_TB_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd">

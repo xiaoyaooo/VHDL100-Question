@@ -80,7 +80,7 @@ signal program_counter : integer;
 -- STUDENT CODE until HERE
 signal instruction 	: std_logic_vector(3 DOWNTO 0);  	-- control signals for the ALU
 -- STUDENT CODE HERE
-COMPONENT rechen IS
+COMPONENT data_path_struct IS
     PORT(
 		clk   			: in std_logic;						    	-- clock
 		rst 			: in std_logic;						    	-- Reset, high active
@@ -199,13 +199,13 @@ BEGIN
                                 instruction_en <= '1';
                 --load r1 new data
                 when  "1000" => mux_sel_sig <= '1';
-                                R2_en <= '0';
+                                R2_en <= '1';
                                 R1_en <= '1';
                                 instruction_en <= '0';
                 --load r2 new data
                 when  "1001" => mux_sel_sig <= '1';
                                 R2_en <= '1';
-                                R1_en <= '0';
+                                R1_en <= '1';
                                 instruction_en <= '0';
                 --jump
                 when  "1010" => mux_sel_sig <= '0';
@@ -252,7 +252,7 @@ BEGIN
    end process main;
 
 -- STUDENT CODE HERE
-    data_path_struct:rechen
+    data_path_struct1:data_path_struct
     PORT MAP(
         clk =>	clk	,				    	-- clock
 		rst =>  rst	,				    	-- Reset, high active
@@ -279,7 +279,7 @@ END;
 
  configuration rechen_config of Rechenwerk_TB is
     for behavior
-        for data_path_struct : rechen
+        for data_path_struct1 : data_path_struct
             use entity work.data_path_struct(structural);
         end for;
     end for;

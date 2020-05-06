@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/components/Rechenwerk.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path_struct'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/uhtrk/Desktop/vhdl/ex2/pes_dhl_ex2/Ex2/ex2.srcs/sources_1/imports/Ex2/Rechenwerk_TB_modelsim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Rechenwerk_TB'

@@ -1,0 +1,379 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 20 15:56:37 2020
+# Process ID: 65932
+# Current directory: C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent103500 C:\Users\uhtrk\Desktop\vhdl\ex4\pes_dhl_ex4\VHDL_Ex3.xpr
+# Log file: C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/vivado.log
+# Journal file: C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/VHDL_Ex3.xpr
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source div16_tb.tcl
+restart
+run 800 ns
+run 800 ns
+restart
+run 800 ns
+close_sim
+launch_simulation
+source div16_tb.tcl
+close_sim
+launch_simulation
+source div16_tb.tcl
+close_sim
+launch_simulation
+source div16_tb.tcl
+close_sim
+launch_simulation
+source div16_tb.tcl
+add_bp {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/VHDL_Ex3.data/sources/div16.vhd} 71
+remove_bps -file {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/VHDL_Ex3.data/sources/div16.vhd} -line 71
+add_bp {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/VHDL_Ex3.data/sources/div16.vhd} 71
+remove_bps -file {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/VHDL_Ex3.data/sources/div16.vhd} -line 71
+close_sim
+launch_simulation
+source div16_tb.tcl
+close_sim
+launch_simulation
+source div16_tb.tcl
+run all
+run all
+run 800 ns
+restart
+run 800 ns
+restart
+restart
+run all
+restart
+run all
+close_sim
+launch_simulation
+source div16_tb.tcl
+restart
+run 800 ns
+save_wave_config {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+set_property xsim.view {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/axi_divider_tb_behav.wcfg C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+save_wave_config {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 800 ns
+restart
+run 800 ns
+save_wave_config {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 800 ns
+restart
+run 800 ns
+save_wave_config {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 800 ns
+run 800 ns
+run 800 ns
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+restart
+run 400 ns
+restart
+run 400 ns
+restart
+run 400 ns
+restart
+run 400 ns
+save_wave_config {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+restart
+run 400 ns
+restart
+run 400 ns
+save_wave_config {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+run 400 ns
+restart
+run 400 ns
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+add_bp {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/VHDL_Ex3.data/sources/div16.vhd} 82
+run 400 ns
+run all
+add_bp {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/VHDL_Ex3.data/sources/div16.vhd} 83
+run all
+save_wave_config {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+run all
+run all
+run all
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+run all
+run all
+run all
+run all
+remove_bps -file {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/VHDL_Ex3.data/sources/div16.vhd} -line 82
+remove_bps -file {C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/VHDL_Ex3.data/sources/div16.vhd} -line 83
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 400 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 100 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 100 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 200 ns
+restart
+run 100 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 100 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/uhtrk/Desktop/vhdl/ex4/pes_dhl_ex4/div16_tb_behav.wcfg
+source div16_tb.tcl
+restart
+run 200 ns
+run 200 ns
+restart
+run 200 ns
+run 200 ns
+close_sim

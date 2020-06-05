@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="div16_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="div16_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="35256765fs"></ZoomStartTime>
+      <ZoomEndTime time="130948647fs"></ZoomEndTime>
+      <Cursor1Time time="115000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="188"></NameColumnWidth>
+      <ValueColumnWidth column_width="110"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/div16_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/input_a" type="array">
+      <obj_property name="ElementShortName">input_a[16:0]</obj_property>
+      <obj_property name="ObjectShortName">input_a[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/input_b" type="array">
+      <obj_property name="ElementShortName">input_b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">input_b[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/result" type="array">
+      <obj_property name="ElementShortName">result[8:0]</obj_property>
+      <obj_property name="ObjectShortName">result[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/cnt1" type="other">
+      <obj_property name="ElementShortName">cnt1</obj_property>
+      <obj_property name="ObjectShortName">cnt1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/cnt2" type="other">
+      <obj_property name="ElementShortName">cnt2</obj_property>
+      <obj_property name="ObjectShortName">cnt2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/pipeline_length" type="other">
+      <obj_property name="ElementShortName">pipeline_length</obj_property>
+      <obj_property name="ObjectShortName">pipeline_length</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/take_result" type="logic">
+      <obj_property name="ElementShortName">take_result</obj_property>
+      <obj_property name="ObjectShortName">take_result</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/input_a_arr" type="array">
+      <obj_property name="ElementShortName">input_a_arr[0:17][16:0]</obj_property>
+      <obj_property name="ObjectShortName">input_a_arr[0:17][16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/input_b_arr" type="array">
+      <obj_property name="ElementShortName">input_b_arr[0:17][7:0]</obj_property>
+      <obj_property name="ObjectShortName">input_b_arr[0:17][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/result_arr" type="array">
+      <obj_property name="ElementShortName">result_arr[0:17][8:0]</obj_property>
+      <obj_property name="ObjectShortName">result_arr[0:17][8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/uut/r_remainder" type="array">
+      <obj_property name="ElementShortName">r_remainder[1:9][15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_remainder[1:9][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/uut/a" type="array">
+      <obj_property name="ElementShortName">a[16:0]</obj_property>
+      <obj_property name="ObjectShortName">a[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/uut/b_new" type="array">
+      <obj_property name="ElementShortName">b_new[15:0]</obj_property>
+      <obj_property name="ObjectShortName">b_new[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/uut/r_sign" type="array">
+      <obj_property name="ElementShortName">r_sign[1:9]</obj_property>
+      <obj_property name="ObjectShortName">r_sign[1:9]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/uut/r_result" type="array">
+      <obj_property name="ElementShortName">r_result[1:9][7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_result[1:9][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/uut/r_result_signed" type="array">
+      <obj_property name="ElementShortName">r_result_signed[8:0]</obj_property>
+      <obj_property name="ObjectShortName">r_result_signed[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/uut/r_shifted_b" type="array">
+      <obj_property name="ElementShortName">r_shifted_b[1:9][15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_shifted_b[1:9][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/div16_tb/uut/b" type="array">
+      <obj_property name="ElementShortName">b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b[7:0]</obj_property>
+   </wvobject>
+</wave_config>
